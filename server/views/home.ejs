@@ -1,0 +1,42 @@
+<%- include Partials/header.ejs %> <!-- Includes the reusable header -->
+<%- include Partials/main_nav.ejs %> <!-- Includes the reusable navigation -->
+
+<!-- Main content -->
+<div class="intro-section">
+    <h1><%= title %></h1> <!-- Dynamic title passed from the route -->
+    <h2>Welcome to <%= title %>! Your ultimate workout tracking companion.</h2>
+</div>
+
+<!-- Highlighting the features -->
+<div class="features">
+    <h3>Track Your Progress, Achieve Your Goals</h3>
+    <p>In this Workout Tracker, you can:</p>
+    <ul>
+        <li><strong>Record your workouts</strong> – Keep track of your sets, reps, and weights to monitor progress.</li>
+        <li><strong>Challenge yourself</strong> – Set fitness goals and push yourself to new heights.</li>
+        <li><strong>Access Public Workouts</strong> – Explore workout routines shared by others and join in on the fun!</li>
+    </ul>
+</div>
+
+<!-- Motivational images and text -->
+<div class="container">
+    <div class="image-text">
+        <img src="/Assets/images/home1.jpg" class="img-fluid rounded" alt="Motivation Image 1">
+        <div class="caption">
+            <h3>Stay Motivated!</h3>
+            <p>Push yourself to new limits with inspiring workouts.</p>
+        </div>
+    </div>
+    
+    <div class="image-text">
+        <img src="/Assets/images/home2.jpg" class="img-fluid rounded" alt="Motivation Image 2">
+        <div class="caption">
+            <h3>Achieve Greatness</h3>
+            <p>With every rep, you're one step closer to your goals.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Call-to-action section -->
+
+<%- include Partials/footer.ejs %>

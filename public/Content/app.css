@@ -1,0 +1,175 @@
+/* Basic reset for all pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body with pink and purple gradient background */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to right, #D5006D, #9C27B0); /* Pink to purple gradient */
+    color: white; /* Default text color for white */
+}
+
+/* Home Page */
+#home-page {
+    text-align: center;
+}
+
+#home-page main {
+    margin-top: 50px;
+}
+
+#home-page h1 {
+    font-size: 36px;
+    color: #FF4081; /* Bright pink color to make it stand out */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+}
+
+#home-page p {
+    font-size: 18px;
+    color: #fff; /* Ensure the paragraph text is white */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Light shadow to help text stand out */
+    font-weight: bold; /* Make all paragraphs bold */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #003366; /* Dark blue header background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none; /* No shadow for a flat design */
+}
+
+.nav-list {
+    list-style-type: none; /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align items horizontally */
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px; /* Space between items */
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Default text color */
+    font-size: 18px; /* Font size for links */
+    font-weight: bold; /* Bold text */
+    padding: 10px 15px; /* Consistent padding for each link */
+    border-radius: 5px; /* Rounded corners for better design */
+    background-color: transparent; /* Default transparent background */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-list li a:hover {
+    background-color: #FF4081; /* Light pink hover effect */
+    color: #003366; /* Dark blue text on hover */
+}
+
+.nav-list li .nav-link.active {
+    background-color: #FF4081; /* Highlight active link */
+    color: #003366; /* Dark blue text */
+    border-radius: 5px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #003366; /* Dark blue footer */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+}
+
+/* Intro section (for Home Page) */
+.intro-section {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center;
+    padding: 50px;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 20px; /* Space between text and image */
+}
+
+.text-content h1 {
+    font-size: 32px;
+    color: #fff; /* White text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #fff; /* White text */
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 10px 7px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Navbar for Mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column; /* Vertical alignment for smaller screens */
+        gap: 10px; /* Reduced spacing for smaller screens */
+    }
+
+    .nav-list li a {
+        padding: 10px 0; /* Adjust spacing for vertical alignment */
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+}
+
+/* General Styles for Lists (Workouts Page) */
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 20px; /* Space between each list item */
+    background: rgba(255, 255, 255, 0.1); /* Subtle background for each item */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Workouts Page Heading */
+h1 {
+    font-size: 28px;
+    text-align: center;
+    color: white; /* Highlight white for headings */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Paragraph Styling */
+p {
+    font-weight: bold; /* Bold all paragraphs for emphasis */
+}

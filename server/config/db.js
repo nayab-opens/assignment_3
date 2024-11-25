@@ -1,0 +1,1 @@
+module.exports={"URI":"mongodb+srv://nayabkhan:5890Qudsia@cluster0.kgrqy.mongodb.net/workout_tracker"}

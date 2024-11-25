@@ -1,0 +1,18 @@
+<%- include Partials/header.ejs %> <!-- Includes the reusable header -->
+<%- include Partials/main_nav.ejs %> <!-- Includes the reusable navigation -->
+
+<!-- Main content -->
+<h1><%= title %></h1> <!-- Dynamic title passed from the route -->
+<h2>Welcome to <%= title %>.</h2>
+
+
+<!-- Images -->
+<div class="container">
+    <img src="/Assets/images/product1.jpg" class="img-fluid rounded" alt="Workout Image 1 ">
+    <h3>Our Commitment to Your Journey to Fitness</h3>
+    <p>We believe that our products are the key to your journey to fitness. That's why we invest heavily in the development and production of our products</p>
+    <p> We ensure that each product is thoroughly tested, and that all materials are of the highest quality.</p>
+    <img src="/Assets/images/product3.jpg" class="img-fluid rounded" alt="Workout Image 3">
+</div>
+
+<%- include Partials/footer.ejs %> <!-- Includes the reusable footer -->

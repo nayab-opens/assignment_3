@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  
+</head>
+<body>
+  <header>
+    <%- include Partials/header.ejs %> <!-- Includes the reusable header -->
+    <%- include Partials/main_nav.ejs %>
+    
+  </header>
+  <main>
+    <% if (workouts.length > 0) { %>
+      <ul>
+        <% workouts.forEach(workout => { %>
+          <li>
+            <strong>Exercise Name:</strong> <%= workout.exerciseName %> <br>
+            <strong>Type:</strong> <%= workout.type %> <br>
+            <strong>Duration:</strong> <%= workout.duration %> <br>
+            <strong>Date:</strong> <%= workout.date %>
+          </li>
+        <% }); %>
+      </ul>
+    <% } else { %>
+      <p>No workouts found in the database.</p>
+    <% } %>
+  </main>
+  <%- include Partials/footer.ejs %>
+</body>
+</html>
